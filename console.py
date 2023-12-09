@@ -24,11 +24,6 @@ class HBNBCommand(cmd.Cmd):
         """ helps with help """
         print("EOF command to exit the program")
 
-    def complete_nothing(self, line, text, begidx, endidx):
-        """ handles empty line """
-        command = [""]
-        return [cmd for cmd in command if cmd.startswith(text)]
-
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
