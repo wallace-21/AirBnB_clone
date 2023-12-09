@@ -24,6 +24,10 @@ class HBNBCommand(cmd.Cmd):
         """ helps with help """
         print("EOF command to exit the program")
 
+    def emptyline(self):
+        """does nothing"""
+        pass
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
