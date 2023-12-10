@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """ BaseModel class."""
-import models
 from uuid import uuid4
 from datetime import datetime
+import models
+""" imports an uuid generator
+import that handles dates and time
+import models"""
 
 
 class BaseModel:
