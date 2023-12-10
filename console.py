@@ -119,11 +119,7 @@ class HBNBCommand(cmd.Cmd):
         print("EOF command to exit the program")
 
     def emptyline(self):
-<<<<<<< HEAD
-        """does nothing"""
-=======
         """empty line"""
->>>>>>> wallace
         pass
 
 
