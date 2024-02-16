@@ -7,7 +7,7 @@
     margin-top: 100px;
 }
 
-.filters button {
+section.filters button {
     font-size: 18px;
     background-color: #FF5A5F;
     color: #FFFFFF;
@@ -17,60 +17,77 @@
     border-radius: 4px;
     margin: 11px 770px;
 }
-.locations {
+
+section.filters button:hover {
+    opacity: 0.9;
+}
+.locations{
+    text-align: left;
     height: 100%;
     width: 25%;
-    border-right: 1px solid #DDDDDD;
-    margin: 11px 60px;
-    margin-top: -50px;
+    border-right: solid 1px #DDDDDD;
+    margin-left: 30px;
+    float: left;
+    margin-top: -70px;
+    
 }
-
-.amenities {
+.amenities{
+    text-align: left;
     height: 100%;
     width: 25%;
-    margin: 11px 370px;
-    margin-top: -79px;
-    border: none;
-    position: fixed;
-
+    margin: -70px 320px;
+    float: left;
 }
-
-.locations h3,
-.amenities h3 {
+h3{
     font-weight: 600;
-    margin-top: 0px;
-    position: fixed;
+    margin: 0px;
+    margin-top: 17px;
+    padding: 0px;
 }
-
-.locations h4,
-.amenities h4 {
+h4{
+    margin: 0px;
+    padding: 0px;
     font-weight: 400;
     font-size: 14px;
-    position: fixed;
-
 }
 
-.popover h2 ul {
-    display: none;
-    
-    color: #FAFAFA;
-    width: 25%;
-    border: 10px solid #DDDDDD;
-    border-radius: 4px;
+.popover{
+    visibility: hidden;
+    position: relative;
     background-color: #FAFAFA;
+    border: solid #DDDDDD 1px;
+    border-radius: 4px;
+    margin-top: 7%;
+    padding-bottom: 10%;
+    margin-left: -30px;
+}
+.popover li h2{
+    padding: 0;
+    margin: 0;
+}
+.popover_li{
+    padding:0px;
+    margin:0px;
+}
+li{
+    list-style-type: none;
+    padding-bottom: 5%;
+}
+ul{
+    padding-top: 30px;
+
+}
+.locations:hover >.popover{
+    visibility: visible;
+    margin-bottom: 50px;
 }
 
-.locations h2,
-.amenities h2 {
-    margin-top: 10px;
-    padding-left: 0;
+.amenities:hover > .popover{
+    visibility: visible;
+    margin-left: -40px;
 }
 
-.locations h2 li,
-.amenities h2 li {
-    cursor: pointer;
-}
-.dont h2 {
-    margin-top: 10px;
-    padding-left: 0;
+
+ul {
+  list-style: none;
 }
